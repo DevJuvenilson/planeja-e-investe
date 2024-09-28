@@ -52,6 +52,20 @@ function calcularAnosDias() {
     }
 }
 
+document.getElementById('formularioDados').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita o recarregamento da página
+
+    // Chama a função de cálculo com os valores do formulário
+    calcularInvestimento(
+        document.getElementById('tipo-juros').value,
+        document.getElementById('capital-inicial').value,
+        document.getElementById('tempo-meses').value,
+        document.getElementById('aporte-mensal').value,
+        document.getElementById('taxa-juros').value,
+        document.getElementById('periodo').value
+    );
+});
+
 async function calcularInvestimento(tipoJuros, capitalInicial, meses, aporteMensal, taxaJuros, periodo) {
 
     if (tipoJuros != null) {

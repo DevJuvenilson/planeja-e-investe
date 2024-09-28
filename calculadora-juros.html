@@ -20,7 +20,7 @@
         </header>
         <main class="conteudo">
             <div class="esquerda">
-                <form action="#">
+                <form id="formularioDados">
 
                     <div class="campo-tipo-juros">
                         <label for="tipo-juros">SELECIONE O TIPO DE JUROS</label>
@@ -72,14 +72,7 @@
                     </div>
 
                     <div class="botao-container">
-                        <button type="submit" onclick="calcularInvestimento(
-                            document.getElementById('tipo-juros').value, 
-                            document.getElementById('capital-inicial').value, 
-                            document.getElementById('tempo-meses').value, 
-                            document.getElementById('aporte-mensal').value, 
-                            document.getElementById('taxa-juros').value, 
-                            document.getElementById('periodo').value
-                        )">CALCULAR</button>
+                        <button type="submit">CALCULAR</button>
                     </div>
                 </form>
             </div>
