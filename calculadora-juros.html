@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Juros</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-family.css">
+    <link rel="stylesheet" href="css/calculadora-juros.css">
+
+    <link rel="shortcut icon" href="Imagem/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="background">
+    <div class="container">
+        <header>
+            <a href="index.html" class="voltar"><img src="Imagem/seta-voltar-borda.png" alt="Voltar" title="Voltar"></a>
+        </header>
+        <main class="conteudo">
+            <div class="esquerda">
+                <form action="#">
+
+                    <div class="campo-tipo-juros">
+                        <label for="tipo-juros">SELECIONE O TIPO DE JUROS</label>
+                        <select class="juros" id="tipo-juros" required>
+                            <option value="juros-compostos">Juros Compostos</option>
+                            <option value="juros-simples">Juros Simples</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-capital">
+                        <label for="capital">CAPITAL INICIAL</label>
+                        <input type="text" class="capital" id="capital-inicial"
+                            placeholder="R$ 0,00" required>
+                    </div>
+
+                    <div class="input-group-um">
+                        <div class="campo-meses">
+                            <label for="meses">MESES</label>
+                            <input type="number" class="meses" id="tempo-meses" required>
+                        </div>
+
+                        <div class="campo-anos">
+                            <label for="anos">ANOS</label>
+                            <input type="number" class="anos" id="tempo-anos" disabled>
+                        </div>
+                    </div>
+
+                    <div class="campo-dias">
+                        <label for="dias">DIAS</label>
+                        <input type="number" class="dias" id="tempo-dias" disabled>
+                    </div>
+
+                    <div class="campo-aporte">
+                        <label for="aporte">APORTE MENSAL</label>
+                        <input type="text" class="dinheiro aporte" id="aporte-mensal"
+                            placeholder="R$ 0,00" required>
+                    </div>
+
+                    <div class="input-group-dois">
+                        <label for="taxa">TAXA DE JUROS</label>
+                        <input type="text" class="taxa" id="taxa-juros"
+                            placeholder="0,00%" required>
+
+                        <select class="periodo" id="periodo" required>
+                            <option value="anual">Anual</option>
+                            <option value="mensal">Mensal</option>
+                            <option value="diario">Diário</option>
+                        </select>
+                    </div>
+
+                    <div class="botao-container">
+                        <button type="submit" onclick="calcularInvestimento(
+                            document.getElementById('tipo-juros').value, 
+                            document.getElementById('capital-inicial').value, 
+                            document.getElementById('tempo-meses').value, 
+                            document.getElementById('aporte-mensal').value, 
+                            document.getElementById('taxa-juros').value, 
+                            document.getElementById('periodo').value
+                        )">CALCULAR</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="direita">
+                <div class="valor-calculado" id="valor-calculado">
+                    <h1>SALDO TOTAL:</h1>
+                </div>
+
+                <div class="juros-gerados" id="juros-gerados">
+                    <h1>JUROS RENDIDOS:</h1>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/calculadora-juros.js"></script>
+</body>
+</html>

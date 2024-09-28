@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz de Investimento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/grt5aji.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #08415c;
+        }
+
+        .container-centralizado {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz-container button {
+            background-color: #df572a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .quiz-container button:hover {
+            background-color: #e3170a;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .result-container {
+            display: none;
+            margin-top: 40px;
+            text-align: center;
+            background-color: #08415c;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        h2{
+            color: #df572a;
+        }
+
+        #botao{
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Container Centralizado -->
+    <div class="container container-centralizado">
+
+        <div class="quiz-container">
+            <h2 class="text-center"><b>MEU INVESTIMENTO PERSONALIZADO</b></h2>
+
+            <br>
+
+            <!-- Container de Perguntas -->
+            <div id="quiz-questions">
+                <!-- Pergunta 1 -->
+                <div class="question">
+                    <h4>1. Qual é o seu objetivo principal ao investir?</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="conservador" id="q1a">
+                        <label class="form-check-label" for="q1a">A) Aumentar patrimônio a longo prazo</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="moderado" id="q1b">
+                        <label class="form-check-label" for="q1b">B) Garantir uma renda extra</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="conservador" id="q1c">
+                        <label class="form-check-label" for="q1c">C) Comprar algo específico (casa, carro, etc.)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="moderado" id="q1d">
+                        <label class="form-check-label" for="q1d">D) Aposentadoria</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="conservador" id="q1e">
+                        <label class="form-check-label" for="q1e">E) Guardar dinheiro para a faculdade</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="conservador" id="q1f">
+                        <label class="form-check-label" for="q1f">F) Criar uma reserva de emergência</label>
+                    </div>
+                </div>
+                <br>
+                <!-- Pergunta 2 -->
+                <div class="question">
+                    <h4>2. Qual é o seu nível de tolerância ao risco?</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" value="arrojado" id="q2a">
+                        <label class="form-check-label" for="q2a">A) Alto, estou disposto a correr riscos para ganhar
+                            mais</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" value="moderado" id="q2b">
+                        <label class="form-check-label" for="q2b">B) Moderado, aceito algum risco por um bom
+                            retorno</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" value="conservador" id="q2c">
+                        <label class="form-check-label" for="q2c">C) Baixo, prefiro segurança mesmo que o retorno seja
+                            menor</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" value="conservador" id="q2d">
+                        <label class="form-check-label" for="q2d">D) Muito baixo, não quero correr nenhum risco</label>
+                    </div>
+                </div>
+                <br>
+                <!-- Pergunta 3 -->
+                <div class="question">
+                    <h4>3. Por quanto tempo pretende deixar seu dinheiro investido?</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" value="conservador" id="q3a">
+                        <label class="form-check-label" for="q3a">A) Menos de 1 ano</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" value="moderado" id="q3b">
+                        <label class="form-check-label" for="q3b">B) 1 a 3 anos</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" value="moderado" id="q3c">
+                        <label class="form-check-label" for="q3c">C) 3 a 5 anos</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" value="arrojado" id="q3d">
+                        <label class="form-check-label" for="q3d">D) Mais de 5 anos</label>
+                    </div>
+                </div>
+                <br>
+                <!-- Pergunta 4 -->
+                <div class="question">
+                    <h4>4. Você prefere investir em algo que:</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" value="arrojado" id="q4a">
+                        <label class="form-check-label" for="q4a">A) Pode ter grande valorização, mas com maior
+                            risco</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" value="moderado" id="q4b">
+                        <label class="form-check-label" for="q4b">B) Oferece crescimento moderado com algum
+                            risco</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" value="conservador" id="q4c">
+                        <label class="form-check-label" for="q4c">C) Garante crescimento constante, mesmo que
+                            pequeno</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" value="conservador" id="q4d">
+                        <label class="form-check-label" for="q4d">D) É extremamente seguro, com retorno
+                            garantido</label>
+                    </div>
+                </div>
+                <br>
+                <!-- Pergunta 5 -->
+                <div class="question">
+                    <h4>5. Como você se sentiria se seus investimentos perdessem 20% do valor em um curto período?</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" value="arrojado" id="q5a">
+                        <label class="form-check-label" for="q5a">A) Manteria o investimento, entendendo que pode se
+                            recuperar</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" value="moderado" id="q5b">
+                        <label class="form-check-label" for="q5b">B) Ficaria preocupado, mas manteria o
+                            investimento</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" value="conservador" id="q5c">
+                        <label class="form-check-label" for="q5c">C) Tentaria resgatar o quanto antes para evitar perdas
+                            maiores</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" value="conservador" id="q5d">
+                        <label class="form-check-label" for="q5d">D) Não consigo imaginar aceitar essa perda</label>
+                    </div>
+                </div>
+                <br>
+                <!-- Pergunta 6 -->
+                <div class="question">
+                    <h4>6. O que você considera mais importante ao investir?</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" value="conservador" id="q6a">
+                        <label class="form-check-label" for="q6a">A) Segurança do meu dinheiro</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" value="moderado" id="q6b">
+                        <label class="form-check-label" for="q6b">B) Bom retorno com risco controlado</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" value="arrojado" id="q6c">
+                        <label class="form-check-label" for="q6c">C) Alto retorno, aceitando o risco necessário</label>
+                    </div>
+                </div>
+                <br>
+                <!-- Pergunta 7 -->
+                <div class="question">
+                    <h4>7. Qual é o seu nível de conhecimento sobre investimentos?</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" value="conservador" id="q7a">
+                        <label class="form-check-label" for="q7a">A) Iniciante, não entendo muito</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" value="moderado" id="q7b">
+                        <label class="form-check-label" for="q7b">B) Intermediário, sei o básico</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" value="arrojado" id="q7c">
+                        <label class="form-check-label" for="q7c">C) Avançado, entendo bem sobre o assunto</label>
+                    </div>
+                </div>
+                <br>
+                <!-- Pergunta 8 -->
+                <div class="question">
+                    <h4>8. Com que frequência você gostaria de revisar seus investimentos?</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" value="conservador" id="q8a">
+                        <label class="form-check-label" for="q8a">A) Raramente, prefiro algo que não exija atenção
+                            constante</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" value="moderado" id="q8b">
+                        <label class="form-check-label" for="q8b">B) Algumas vezes ao ano</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" value="arrojado" id="q8c">
+                        <label class="form-check-label" for="q8c">C) Regularmente, quero estar sempre atualizado</label>
+                    </div>
+                </div>
+
+                <button id="botao" class="mt-4" onclick="calcularResultado()">Finalizar Quiz</button>
+            </div>
+
+            <!-- Resultado -->
+            <div id="quiz-result" class="result-container text-light">
+                <h3 id="result-text"></h3>
+                <button onclick="location.href='index.html'">Voltar aos Investimentos
+                    Personalizados</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function calcularResultado() {
+            let score = 0;
+
+            // Coletar respostas
+            const respostas = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8'];
+            respostas.forEach(id => {
+                const radios = document.getElementsByName(id);
+                radios.forEach(radio => {
+                    if (radio.checked) {
+                        if (radio.value === 'conservador') {
+                            score += 1;
+                        } else if (radio.value === 'moderado') {
+                            score += 2;
+                        } else if (radio.value === 'arrojado') {
+                            score += 3;
+                        }
+                    }
+                });
+            });
+
+            // Definir o resultado com base no score
+            let resultado;
+            if (score <= 10) {
+                window.location.href = 'conservador.html';
+            } else if (score <= 16) {
+                window.location.href = 'moderado.html';
+            } else {
+                window.location.href = 'arrojado.html';
+            }
+
+            // Exibir o resultado
+            document.getElementById('quiz-questions').style.display = 'none';
+            document.getElementById('quiz-result').style.display = 'block';
+            document.getElementById('result-text').textContent = resultado;
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

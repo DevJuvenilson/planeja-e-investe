@@ -1,0 +1,282 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100%;
+}
+
+.background {
+    background: url(../Imagem/Fundo-texturizado-laranja.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@media (max-width: 600px) {
+    .background {
+        height: auto;
+    }
+}
+
+.container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+.voltar {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.voltar:hover {
+    cursor: pointer;
+    background-color: #f4f4f4;
+}
+
+.voltar>img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.conteudo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .conteudo {
+        flex-direction: column;
+    }
+}
+
+.esquerda,
+.direita {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.direita {
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .esquerda {
+        flex-direction: column;
+    }
+}
+
+.esquerda div,
+.direita div {
+    padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+
+    .esquerda div,
+    .direita div {
+        padding-bottom: 15px;
+    }
+}
+
+input {
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+label {
+    font-family: 'poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::placeholder {
+    font-family: 'poppins', sans-serif;
+}
+
+select {
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.campo-tipo-juros select {
+    width: 100%;
+}
+
+.campo-capital input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.campo-aporte input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-group-um {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+@media (max-width: 600px) {
+    .input-group-um {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.input-group-um input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.anos {
+    background-color: rgb(216, 216, 216);
+}
+
+.dias {
+    background-color: rgb(216, 216, 216);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Responsividade: quando a tela for menor que 600px */
+@media (max-width: 600px) {
+    .input-group-um {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.input-group-dois {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-group-dois label,
+.input-group-dois input,
+.input-group-dois select {
+    box-sizing: border-box;
+}
+
+.input-group-dois label {
+    width: 100%;
+}
+
+.input-group-dois input {
+    width: 74%;
+}
+
+.input-group-dois select {
+    width: 24%;
+}
+
+@media (max-width: 600px) {
+    .input-group-dois {
+        flex-direction: column;
+    }
+
+    .input-group-dois label,
+    .input-group-dois input,
+    .input-group-dois select {
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    .input-group-dois label {
+        width: 100%;
+    }
+
+    .input-group-dois input {
+        width: 100%;
+    }
+
+    .input-group-dois select {
+        width: 100%;
+    }
+}
+
+.botao-container {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.botao-container button {
+    width: 65%;
+    padding: 10px;
+    font-family: 'alfarn', sans-serif;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+    .botao-container button {
+        width: 100%;
+    }
+}
+
+.valor-calculado {
+    margin-bottom: 10px;
+}
+
+.valor-calculado,
+.juros-gerados {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #d3d2d2;
+    border-radius: 10px;
+}
+
+.valor-calculado h1,
+.juros-gerados h1 {
+    font-family: 'alfarn', sans-serif;
+    box-sizing: border-box;
+    font-weight: 800;
+    padding: 5px;
+}
+
+.valor-calculado p,
+.juros-gerados p {
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 35px;
+}

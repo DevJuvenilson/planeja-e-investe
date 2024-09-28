@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Investimento Personalizado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<style>
+    * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .fundo {
+            background-image: url(Imagem/fundook.png);
+        }
+
+        .container-centralizado {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz-container {
+            text-align: justify;
+            margin: 40px 0;
+            background-color: #08415c;
+            border-radius: 15px;
+            padding: 20px;
+            color: white;
+        }
+
+        button {
+            background-color: #df572a;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #e3170a;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .result-container {
+            display: none;
+            margin-top: 40px;
+            text-align: center;
+            background-color: #08415c;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        h2{
+            color: #df572a;
+        }
+</style>
+<body class="fundo">
+
+    <br><br>
+
+    <!-- Container Centralizado -->
+    <div class="container container-centralizado">
+        <br>
+            <h2 class="text-center"><b>MEU INVESTIMENTO PERSONALIZADO</b></h2>
+
+        <div class="quiz-container">
+            <h3 style="text-align: center;">Você é um Investidor Moderado!</h3>
+            <img class="col-12" src="Imagem/inv moderado.png">
+            <br><br>
+            <h4>Conheça algumas formas de investimento ideais para você:</h4>
+            <ul>
+                <li>Tesouro Direto</li>
+                <li>Debêntures</li>
+                <li>Certificados de Depósitos Bancários</li>
+                <li>Ações</li>
+                <li>Fundos imobiliários</li>
+                <li>Fundos Multimercados</li>
+                <li>Letras financeiras</li>
+            </ul>
+
+
+            <button onclick="location.href='index.html'">Voltar aos Investimentos
+                Personalizados</button>
+
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
