@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfil do Investidor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/grt5aji.css">
+
+    <link rel="shortcut icon" href="Imagem/favicon.ico" type="image/x-icon">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        p {
+
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        h4,
+        h5 {
+            text-align: center;
+        }
+
+        .imglog {
+            width: 15%;
+        }
+
+        .palet_azul {
+            background-color: #08415c;
+        }
+
+        .palet_lar1 {
+            background-color: #e3170a;
+        }
+
+        .palet_lar {
+            background-color: #df572a;
+        }
+
+        .a_font {
+            color: #df572a;
+            font-family: "alfarn", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+
+        .intro {
+            text-align: justify;
+            text-indent: 40px;
+            color: #000000;
+        }
+
+        .intro2 {
+            text-align: justify;
+            text-indent: 40px;
+            color: #effafa;
+        }
+
+        .cards1 {
+            color: #effafa;
+            background-color: #08415c;
+        }
+
+        .investidores {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .tipos {
+            border-radius: 15px;
+            background-color: #df572a;
+            padding: 10px 30px 5px 30px;
+            margin: 0em 2em 2em 2em;
+            width: 23em;
+            height: 23em;
+        }
+
+        .tipos2 {
+            border-radius: 15px;
+            background-color: #08415c;
+            color: #effafa;
+            margin: 1em;
+            padding: 0.5em;
+            width: 10em;
+            height: 3em;
+        }
+
+        .tipos3 {
+            border: solid #effafa 1px;
+            border-radius: 15px;
+            margin: 0.5em;
+            color: #effafa;
+            padding: 0.5em;
+            width: 25em;
+            height: 40em;
+        }
+
+        .tipos4 {
+            border: solid #effafa 1px;
+            border-radius: 15px;
+            margin: 0.5em;
+            color: #effafa;
+            padding: 0.5em;
+            width: 25em;
+            height: 31em;
+        }
+
+        .t1 {
+            text-align: justify;
+            text-indent: 40px;
+        }
+
+        .elemento {
+            text-align: left;
+        }
+
+        .elemento:before {
+            content: '\002192';
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="bootstrap" viewBox="0 0 118 94">
+                <title>Bootstrap</title>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+                </path>
+            </symbol>
+            <symbol id="facebook" viewBox="0 0 16 16">
+                <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </symbol>
+            <symbol id="instagram" viewBox="0 0 16 16">
+                <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </symbol>
+            <symbol id="twitter" viewBox="0 0 16 16">
+                <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+            </symbol>
+        </svg>
+        <!-- INICIO MENU-->
+        <nav class="navbar navbar-expand-lg  palet_azul">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="Imagem/Logo-P&I.png" class="imglog m-1"
+                        style="width: 10%;"></a>
+
+                <div class="collapse navbar-collapse" id="navbarScroll" style="margin-left: -450px;">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link a_font" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link a_font" href="https://www.sesisp.org.br/">SESI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link a_font" href="https://www.sp.senai.br/">SENAI</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle a_font" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                GRUPOS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Estou Endividado(a)?</a></li>
+                                <li><a class="dropdown-item" href="planejamento.html">Organização Familiar</a></li>
+                                <li><a class="dropdown-item" href="meusgastos.html">Meus Gastos</a></li>
+                                <li><a class="dropdown-item" href="#">Perfil do Investidor</a>
+                                </li>
+                                <li><a class="dropdown-item" href="investimento-personalizado.html">Investimento
+                                        Personalizado</a></li>
+                                <li><a class="dropdown-item" href="calculadora-juros.html">Calculadora de Juros</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- FIM MENU-->
+
+        <div style="background-color: #effafa;">
+            <img src="Imagem/Banner.png"
+                alt="banner laranja e azul sobre os tipos de investimentos e perfil do investidor" width="100%">
+            <div class="m-5">
+                <div class="intro">
+                    <p>Você já se perguntou como os bilionários do mundo conseguem manter suas fortunas sempre em
+                        crescimento? A
+                        resposta pode te surpreender! Acredite ou não, eles não dependem apenas das receitas de suas
+                        empresas,
+                        na verdade o segredo está nos investimentos inteligentes, que garantem que seu dinheiro nunca
+                        fique
+                        parado. E o melhor, isso não é algo reservado apenas para eles! Você também pode trilhar esse
+                        caminho e
+                        conquistar uma renda extra ou até mesmo aplicar essa estratégia em sua empresa.</p>
+                    <p>O primeiro passo é descobrir qual é o seu perfil de investidor. A partir daí, você poderá
+                        identificar
+                        os
+                        melhores tipos de investimento que se alinham aos seus objetivos e necessidades. Aqui, vamos
+                        explicar
+                        todos os tipos de perfis e quais são os melhores investimentos para cada um deles. Vamos lá?</p>
+                </div>
+            </div>
+            <!--Início da DIV para falar sobre os diferentes tipos de investidores, conservador, moderado e arrojado-->
+            <div class="cards1">
+                <br>
+                <div class="mx-5 intro2">
+                    <h3>Que tipo de investidor eu sou?</h3>
+                    <p>No mercado financeiro, existem três perfis principais para classificar os investidores de acordo
+                        com
+                        sua
+                        tolerância ao risco e objetivos: conservador, moderado e arrojado. O investidor conservador
+                        busca
+                        segurança e estabilidade, priorizando a preservação do capital. O moderado, por sua vez, procura
+                        um
+                        equilíbrio entre segurança e crescimento, aceitando algum nível de risco. Já o perfil arrojado
+                        tem
+                        alta
+                        disposição para enfrentar oscilações em busca de retornos mais elevados.</p>
+                    <p>Abaixo, traremos algumas informações para que você entenda melhor cada perfil e identifique qual
+                        deles
+                        reflete o seu estilo de investimento!</p>
+                </div>
+                <div class="investidores">
+                    <div class="tipos"> <!--DIV do tipo conservador-->
+                        <h4 class="pt-1">Conservador</h4>
+                        <p class="elemento"> Preferem segurança e estabilidade;</p>
+                        <p class="elemento"> Evitam riscos e preferem investimentos mais previsíveis;</p>
+                        <p class="elemento"> Buscam preservar o capital, mesmo que isso signifique ganhos menores;</p>
+                        <p><strong>Exemplos de investimentos:</strong> renda fixa, tesouro direto, CDBs.</p>
+                    </div>
+                    <div class="tipos"> <!--DIV do tipo moderado-->
+                        <h4 class="pt-1">Moderado</h4>
+                        <p class="elemento"> Buscam equilíbrio entre segurança e retorno;</p>
+                        <p class="elemento"> Aceitam um nível moderado de risco para obter ganhos maiores;</p>
+                        <p class="elemento"> Preferem diversificação entre renda fixa e variável;</p>
+                        <p><strong>Exemplos de investimentos:</strong> títulos públicos, fundos multimercados, ações e
+                            ETFs.
+                        </p>
+                    </div>
+                    <div class="tipos"> <!--DIV do tipo arrojado-->
+                        <h4 class="pt-1">Arrojado</h4>
+                        <p class="elemento"> Estão dispostos a correr mais riscos em busca de retornos maiores;</p>
+                        <p class="elemento"> Aceitam a possibilidade de perder parte do capital em curto prazo, desde
+                            que
+                            haja chances de ganhos significativos no futuro;</p>
+                        <p><strong>Tipos de investimentos:</strong> ações, fundos de investimento de alto risco,
+                            criptomoedas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-5">
+                <div class="intro">
+                    <p>Antes de escolher um investimento, é essencial entender as diferenças entre as principais
+                        modalidades disponíveis. Os investimentos de renda fixa podem ser divididos em pré-fixados e
+                        pós-fixados, cada um com características e retornos específicos. Além disso, é importante
+                        considerar a
+                        liquidez dos ativos, que determina a facilidade de transformar o investimento em dinheiro. A
+                        seguir,
+                        apresentamos um breve panorama sobre esses conceitos para ajudar você a tomar decisões mais
+                        informadas.</p>
+                    <h3>Pré, pós e liquidez</h3>
+                    <p>Os investimentos pré-fixados são uma modalidade de investimento de renda fixa que se caracteriza
+                        por ter a rentabilidade fixada desde o início da aplicação. Isso significa que o investidor sabe
+                        antecipadamente o retorno que receberá, independentemente de flutuações nos índices econômicos.
+                    </p>
+                    <p>Já investimentos pós-fixados são uma categoria de ativos financeiros que têm a rentabilidade
+                        atrelada a um índice de referência, como o CDI, a Taxa Selic ou o IPCA. Por isso, o investidor
+                        não sabe o rendimento exato que terá na hora da aplicação, podendo apenas conhecê-lo no
+                        vencimento ou resgate do título. </p>
+                    <p>A principal diferença entre os investimentos pós-fixados e os prefixados é que os primeiros
+                        acompanham um indicador, enquanto os segundos têm uma rentabilidade definida.</p>
+                    <p>Liquidez é uma característica dos investimentos, não um tipo de investimento, e indica a
+                        capacidade de um ativo ser convertido em dinheiro rapidamente, sem perder muito valor. Os
+                        investimentos com liquidez diária permitem resgates imediatos, sem penalidades por resgates
+                        antecipados ou prazos mínimos de permanência. </p>
+                </div>
+            </div>
+            <div style="background-color: #df572a;">
+                <div class="mx-5">
+                    <br>
+                    <div class="intro2">
+                        <h3>Tipos de Investimento</h3>
+                        <p>Dentro do ramo econômico, existem diversos tipos de investimentos, porém para que você saiba
+                            o
+                            tipo de investimento perfeito para você é preciso que se saiba qual o seu perfil, é só
+                            clicar no
+                            banner ali embaixo e você já será redirecionado para um quis. Agora que você já descobriu os
+                            tipos de perfis,
+                            vamos descobrir os tipos de investimentos!</p>
+                    </div>
+                    <div class="investidores">
+                        <div class="tipos2">
+                            <h5 class="pt-1">LCI</h5>
+                        </div>
+                        <div class="tipos2">
+                            <h5 class="pt-1">LCA</h5>
+                        </div>
+                        <div class="tipos2">
+                            <h5 class="pt-1">AÇÕES</h5>
+                        </div>
+                        <div class="tipos2">
+                            <h5 class="pt-1">CDB</h5>
+                        </div>
+                        <div class="tipos2">
+                            <h5 class="pt-1">LETRA FINANC.</h5>
+                        </div>
+                        <div class="tipos2">
+                            <h5 class="pt-1">CRIPTOMOEDA</h5>
+                        </div>
+                    </div>
+                    <div class="investidores">
+                        <div class="tipos3">
+                            <h5 class="mt-3">Letra de Crédito Imobiliário</h5>
+                            <p class="elemento"><strong> Indicado para o perfil:</strong> Conservador/ Moderado</p>
+                            <p class="t1">A Letra de Crédito Imobiliário (mais conhecido como LCI) é um tipo de
+                                investimento de
+                                <strong>renda fixa</strong>, no qual você <strong>pode prever ou conhecer a
+                                    rentabilidade antes de investir</strong>. Tal
+                                tipo de investimento ajuda a financiar o setor imobiliário, sendo assim ao adquirir uma
+                                LCI, você emprestará dinheiro a uma instituição financeira e, após um período
+                                determinado, recebe de volta o valor investido acrescido de juros.
+                            </p>
+                            <p class="t1">Vale ressaltar também que embora as LCIs possuam um prazo de carência, elas
+                                permitem o resgate do dinheiro a qualquer momento, sendo uma opção interessante para
+                                quem precisa de liquidez, como em uma reserva de emergência.</p>
+                        </div>
+                        <div class="tipos3">
+                            <h5 class="mt-3">Letra de Crédito do Agronegócio</h5>
+                            <p class="elemento"><strong> Indicado para o perfil:</strong> Conservador/ Moderado</p>
+                            <p class="t1">A Letra de Crédito do Agronegócio (mais conhecido como LCA) é um investimento
+                                de renda fixa, <strong>semelhante ao LCI</strong>, mas direcionado ao financiamento do
+                                setor agropecuário
+                                no Brasil. Ao investir em uma LCA, seu dinheiro será emprestado para os agricultores e
+                                esse valor fica aplicado por um período determinado. Após esse prazo, você recebe o
+                                valor investido acrescido de juros.
+                            </p>
+                            <p class="t1">As LCAs também são indicadas para quem busca previsibilidade nos rendimentos
+                                e, geralmente, têm prazos de carência, durante os quais o valor fica indisponível para
+                                resgate.</p>
+                        </div>
+                        <div class="tipos3">
+                            <h5 class="mt-3">Ações da Bolsa</h5>
+                            <p class="elemento"><strong> Indicado para o perfil: </strong>Moderado/ Arrojado (com
+                                moderação)</p>
+                            <p class="t1">As ações são uma forma de investimento em <strong>renda variável</strong>,
+                                onde você compra uma
+                                pequena participação em uma empresa. Ao adquirir ações, você se torna sócio da empresa,
+                                podendo lucrar com a valorização das ações no mercado e com a distribuição de
+                                dividendos, que são partes dos lucros da empresa repassadas aos acionistas, vale
+                                ressaltar também que diferente dos investimentos de renda fixa, <strong>as ações não têm
+                                    garantia de retorno</strong>, pois seu valor pode oscilar bastante de acordo com o
+                                desempenho da
+                                empresa e as condições do mercado. No entanto, elas oferecem a possibilidade de
+                                <strong>ganhos
+                                    expressivos a longo prazo</strong>, sendo uma opção para quem busca maior
+                                rentabilidade e está
+                                <strong>disposto a assumir mais riscos</strong>.
+                        </div>
+                    </div>
+                    <div class="investidores">
+                        <div class="tipos4">
+                            <h5 class="mt-3">Certificado de Depósito Bancário</h5>
+                            <p class="elemento"><strong> Indicado para o perfil:</strong> Conservador/ Moderado</p>
+                            <p class="t1">O Certificado de Depósito Bancário (mais conhecido como CDB) é um investimento
+                                de <strong>renda fixa</strong> e, em troca, o investidor recebe o valor aplicado
+                                acrescido da
+                                rentabilidade prevista
+                            </p>
+                            <p class="t1">O CDB é considerado <strong>um investimento de baixo risco</strong> e é
+                                recomendado para quem
+                                busca segurança em suas aplicações financeiras. É uma opção versátil, podendo ser
+                                utilizada para investimentos de curto e médio prazo, e até mesmo como reserva de
+                                emergência. </p>
+                        </div>
+                        <div class="tipos4">
+                            <h5 class="mt-3">Letra Financeira</h5>
+                            <p class="elemento"><strong> Indicado para o perfil:</strong> Conservador/ Moderado</p>
+                            <p class="t1">A Letra Financeira (também conhecida como LF) é um título de <strong>renda
+                                    fixa</strong>
+                                emitido por instituições financeiras, como bancos e cooperativas de crédito, para captar
+                                recursos de longo prazo, sendo assim o investidor empresta um dinheiro para a
+                                instituição, que se compromete a pagar um valor corrigido no final do período de
+                                aplicação, vale ressaltar também que o prazo mínimo de aplicação é de dois anos, ou
+                                seja, não se pode realizar um saque antecipado.</p>
+                        </div>
+                        <div class="tipos4">
+                            <h5 class="mt-3">Criptomoedas</h5>
+                            <p class="elemento"><strong> Indicado para o perfil:</strong> Arrojado</p>
+                            <p class="t1">As criptomoedas são <strong>moedas digitais</strong> protegidas por
+                                criptografia e operam em
+                                redes descentralizadas, sem controle de governos ou instituições financeiras. Diferente
+                                das ações, que oferecem participação em empresas, as criptomoedas funcionam como
+                                <strong>meio de
+                                    troca ou reserva de valor</strong>, sendo assim o seu valor é altamente volátil,
+                                variando
+                                rapidamente devido a fatores como demanda, especulação e inovações tecnológicas, sem
+                                mencionar que em um dia a variação pode ser gigantesca, variando em questão de horas.
+                            </p>
+                        </div>
+                    </div>
+                    <p class="intro2">Agora que você conhece os tipos de perfis, e sabe alguns dos tipos de
+                        investimentos que existem,
+                        faça nosso <a href="investimento-personalizado.html">teste</a> para saber qual é o seu!</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- INICIO R0DAPÉ-->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+            <div class="col-md-4 d-flex align-items-center  ">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter" />
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram" />
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook" />
+                        </svg></a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- FIM RODAPÉ-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+</html>
