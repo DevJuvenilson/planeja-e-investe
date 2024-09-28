@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Juros</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-family.css">
     <link rel="stylesheet" href="css/calculadora-juros.css">
@@ -23,7 +24,8 @@
                 <form id="formularioDados">
 
                     <div class="campo-tipo-juros">
-                        <label for="tipo-juros">SELECIONE O TIPO DE JUROS</label>
+                        <label for="tipo-juros" data-bs-toggle="tooltip" data-bs-title="JUROS COMPOSTOS é o juros rendido baseado no valor + juros.
+                        JUROS SIMPLES é o juros rendido baseado no valor.">SELECIONE O TIPO DE JUROS</label>
                         <select class="juros" id="tipo-juros" required>
                             <option value="juros-compostos">Juros Compostos</option>
                             <option value="juros-simples">Juros Simples</option>
@@ -31,7 +33,7 @@
                     </div>
 
                     <div class="campo-capital">
-                        <label for="capital">CAPITAL INICIAL</label>
+                        <label for="capital" data-bs-toggle="tooltip" data-bs-title="CAPITAL INICIAL é a quantidade que será investida no momento">CAPITAL INICIAL</label>
                         <input type="text" class="capital" id="capital-inicial"
                             placeholder="R$ 0,00" required>
                     </div>
@@ -54,13 +56,13 @@
                     </div>
 
                     <div class="campo-aporte">
-                        <label for="aporte">APORTE MENSAL</label>
+                        <label for="aporte" data-bs-toggle="tooltip" data-bs-title="APORTE MENSAL é a quantida que será adicionada todos os meses">APORTE MENSAL</label>
                         <input type="text" class="dinheiro aporte" id="aporte-mensal"
                             placeholder="R$ 0,00" required>
                     </div>
 
                     <div class="input-group-dois">
-                        <label for="taxa">TAXA DE JUROS</label>
+                        <label for="taxa" data-bs-toggle="tooltip" data-bs-title="TAXA DE JUROS é a porcentagem que irá render todos os meses">TAXA DE JUROS</label>
                         <input type="text" class="taxa" id="taxa-juros"
                             placeholder="0,00%" required>
 
@@ -89,6 +91,13 @@
         </main>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
     <script src="js/calculadora-juros.js"></script>
 </body>
 </html>

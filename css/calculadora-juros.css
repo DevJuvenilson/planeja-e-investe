@@ -197,10 +197,6 @@ select {
     box-sizing: border-box;
 }
 
-.input-group-dois label {
-    width: 100%;
-}
-
 .input-group-dois input {
     width: 74%;
 }
@@ -246,6 +242,12 @@ select {
     font-family: 'alfarn', sans-serif;
     font-size: 20px;
     margin-top: 15px;
+    background-color: none;
+    transition: background-color ease 0.5s;
+}
+
+.botao-container button:hover{
+    background-color: #df572a;
 }
 
 @media (max-width: 600px) {
