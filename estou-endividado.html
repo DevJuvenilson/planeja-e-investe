@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estou Endividado?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            color: #fff6f6;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #08415c;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #f6f6f6;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        
+        h2 {
+            color: #08415c;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Banner Principal */
+        .banner {
+            width: 100%;
+            max-width: 4624px;
+            height: auto;
+            position: relative;
+        }
+
+        /* Espaço para adicionar uma imagem */
+        .banner img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+            display: block;
+        }
+
+        /* Seções principais */
+        .sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 50px 20px;
+        }
+
+        .section {
+            background-color: #df572a;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 30px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0px 8px 20px white(0 77% 16% / 0.1);
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+        }
+
+        .section img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .section h3 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            color: #08415c;
+            line-height: 1.8;
+        }
+
+        /* Seção sobre como sair do endividamento */
+        .debt-section {
+            background-color: #0c0c0c;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .debt-section h2 {
+            font-size: 2rem;
+            color: #df572a;
+            margin-bottom: 20px;
+        }
+
+        .debt-section p {
+            font-size: 1.2rem;
+            color: #fff8f8;
+            line-height: 1.8;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color:#08415c;
+            color: rgb(255, 252, 252);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #df572a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2rem;
+            }
+
+            .sections {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="#">Finanças</a>
+            <a href="#">Negociar Dívidas</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="banner">
+        <!-- Adicione sua imagem do banner aqui -->
+        <img src="Imagem/estou endivividado.png" alt="Banner Estou Endividado">
+    </section>
+
+    <!-- Seções principais -->
+    <section class="sections">
+        <div class="section">
+            <img src="organize suas finanças.png" alt="Organize suas Finanças">
+            <h3>Organize suas Finanças</h3>
+            <p>Organizar suas finanças é crucial para alcançar a estabilidade financeira. Comece fazendo um diagnóstico das suas receitas e despesas mensais para identificar onde gastar e economizar. Crie um orçamento, dividindo suas despesas em categorias e definindo limites de gastos, priorizando despesas essenciais e reservando parte da renda para poupança. Controle seus gastos usando aplicativos ou planilhas e busque eliminar dívidas de alto custo. Por fim, estabeleça metas financeiras de curto, médio e longo prazo, como viajar ou se preparar para a aposentadoria. Com disciplina e um plano claro, você estará no caminho certo para uma vida financeira saudável.</p>
+        </div>
+
+        <div class="section">
+            <img src="negocio de divida.png" alt="Negocie suas Dívidas">
+            <h3>Negocie suas Dívidas</h3>
+            <p>Negociar dívidas pode ser desafiador, mas é essencial para recuperar o controle financeiro. Comece fazendo uma lista de todas as suas dívidas, com valores e credores. Entre em contato com os credores, sendo honesto sobre sua situação e pedindo melhores condições, como redução de juros. Prepare-se para negociar, definindo um valor que você pode pagar mensalmente e esteja disposto a fazer contrapropostas. Considere consolidar suas dívidas para facilitar o pagamento e, se necessário, busque ajuda profissional de organizações ou consultores financeiros. Com paciência e determinação, você pode renegociar suas dívidas e alcançar a tranquilidade financeira.</p>
+        </div>
+
+        <div class="section">
+            <img src="planejamento-icon.png" alt="Planejamento Financeiro">
+            <h3>Planejamento Financeiro</h3>
+            <p>Para manter suas finanças sob controle e evitar dívidas no futuro, comece avaliando sua situação financeira e criando um orçamento mensal. Estabeleça metas financeiras claras e crie um fundo de emergência para imprevistos. Invista em educação financeira e controle seus gastos anotando tudo. Use o crédito com cautela, revisite seu orçamento regularmente e considere buscar fontes de renda extra. O mais importante é manter a disciplina e compromisso com seus objetivos financeiros.</p>
+        </div>
+    </section>
+
+    <!-- Seção sobre como sair do endividamento -->
+    <section class="debt-section">
+        <h2>Como Sair do Endividamento</h2>
+        
+        <p>Sair do endividamento pode parecer uma tarefa difícil, mas com planejamento e disciplina, é totalmente possível. O primeiro passo é ter clareza da sua situação financeira. Faça uma lista de todas as suas dívidas: o valor total, os juros e os prazos de cada uma. Assim, você tem uma visão geral do problema e pode traçar um plano de ação.</p>
+        <p>Depois, monte um orçamento realista, incluindo todas as suas despesas essenciais e corte gastos desnecessários. Esse controle é fundamental para liberar mais dinheiro para pagar as dívidas.</p>
+        <p>Outra dica importante é priorizar as dívidas com os maiores juros, como cartões de crédito e cheque especial, pois elas crescem muito rápido. Se possível, negocie com os credores para conseguir melhores condições de pagamento, como redução dos juros ou parcelamento.</p>
+        <p>Considere também trocar uma dívida cara por uma mais barata, como pegar um empréstimo com juros menores para quitar uma dívida maior. Assim, você reduz o custo total.</p>
+        <p>Por fim, mude seus hábitos financeiros. Aprenda a economizar, crie uma reserva de emergência e evite novos empréstimos. Com essas atitudes, você vai não só sair das dívidas, mas também evitar cair nelas de novo no futuro.</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Estou Endividado. Todos os direitos reservados. <a href="#">Política de Privacidade</a></p>
+    </footer>
+
+</body>
+</html>
