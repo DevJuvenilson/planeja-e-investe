@@ -17,14 +17,9 @@
             padding: 0;
         }
 
-
         p {
             text-align: justify;
             margin: 15px;
-        }
-
-        .imglog {
-            width: 15%;
         }
 
         .palet_azul {
@@ -40,7 +35,7 @@
         }
 
         .a_font {
-            color: #df572a;
+            color: white;
             font-family: "alfarn", sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -48,20 +43,35 @@
             text-transform: uppercase;
         }
 
+        .navbar-collapse {
+            box-sizing: border-box;
+        }
+
+        .navbar-toggler {
+            border-color: white;
+            /* Altere para a cor desejada */
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .a_font:hover {
+            color: #df572a;
+        }
+
         .mat_f p {
             color: rgb(255, 255, 255);
             line-height: 1, 5em;
             font-size: 24px;
-            text-indent: 4em
+            text-indent: 1em
         }
 
         footer p {
             color: #6c7573;
             border-bottom: solid 1px #6c7573;
-            margin-bottom: 2em;
             padding-bottom: 1em;
             text-align: center;
-
         }
     </style>
 </head>
@@ -92,28 +102,23 @@
     <!-- INICIO MENU-->
     <header>
         <nav class="navbar navbar-expand-lg  palet_azul">
-            <div class="container-fluid">
-                <a class=" d-flex align-items-center" href="index.html">
-                    <img src="Imagem/Logo-P&I.png" class="imglog m-1" style="width: 10%;">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="Imagem/Logo-P&I.png" class="m-1" width="50">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle Navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle Navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.sesisp.org.br/">SESI</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.sp.senai.br/">SENAI</a>
+                            <a class="nav-link a_font" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle a_font" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 GRUPOS
                             </a>
@@ -125,8 +130,13 @@
                                 <li><a class="dropdown-item" href="investimento-personalizado.html">Investimento
                                         Personalizado</a></li>
                                 <li><a class="dropdown-item" href="calculadora-juros.html">Calculadora de Juros</a></li>
-
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link a_font" href="https://www.sesisp.org.br/">SESI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link a_font" href="https://www.sp.senai.br/">SENAI</a>
                         </li>
                     </ul>
                 </div>
@@ -202,7 +212,6 @@
     <!-- INICIO TEXTO E IMAGEM-->
     <div class="row mt-3 mb-3 container-fluid">
         <div class="col-sm-12 col-md-8 mat_f">
-
             <p>
                 Bem-vindo ao Planeja e Investe, um espaço dedicado ao
                 aprendizado sobre investimentos e administração de capital familiar, desenvolvido pelos estudantes do 2ª
@@ -232,77 +241,82 @@
     </div>
     <!-- FIM TEXTO E IMAGEM-->
     <!-- INICIO CARDS-->
-    
-    <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
-        <div class="col">
-          <div class="card h-100">
-            <img src="Imagem/ESTOU ENDIVIDADO.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Estou Endividado?</h5>
-              <p class="card-text">Transforme dívidas em oportunidades: descubra o caminho para a liberdade
-                financeira!</p>
-                <a href="estou-endividado.html" class="btn palet_lar1">Ler Mais</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <img src="Imagem/02CARD banner2-financeiramento-familiar.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Planejamento Familiar</h5>
-              <p class="card-text">Seu futuro começa hoje por isso, Invista em você e no futuro da sua família. Comece já!</p>
-              <a href="planejamento.html" class="btn palet_lar1">Ler Mais</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="Imagem/03CARD - GEISA-Recuperado.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Como Direcionar Melhor meus Gastos</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              <a href="meus-gastos.html" class="btn palet_lar1">Ler Mais</a>
-            </div>
-
-          </div>
-        </div>
-      </div>
 
     <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
         <div class="col">
-          <div class="card h-100">
-            <img src="Imagem/04CARD.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Perfil do Investidor</h5>
-              <p class="card-text">Descubra seu perfil investidor e os diversos tipos de investimentos.</p>
-              <a href="perfil-investidor.html" class="btn palet_lar1">Ler Mais</a>
+            <div class="card h-100">
+                <img src="Imagem/ESTOU ENDIVIDADO.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Estou Endividado?</h5>
+                    <p class="card-text">Transforme dívidas em oportunidades: descubra o caminho para a liberdade
+                        financeira!</p>
+                    <a href="estou-endividado.html" class="btn palet_lar1">Ler Mais</a>
+                </div>
             </div>
-          </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="Imagem/02CARD banner2-financeiramento-familiar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Planejamento Familiar</h5>
+                    <p class="card-text">Seu futuro começa hoje por isso, Invista em você e no futuro da sua família.
+                        Comece já!</p>
+                    <a href="planejamento.html" class="btn palet_lar1">Ler Mais</a>
+                </div>
+            </div>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="Imagem/05 CARD banner-investimentocarol.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Investimento Personalizado</h5>
-              <p class="card-text">Invista em você. Conheça os investimentos que combinam com o seu perfil e alcance seus objetivos mais rápido.</p>
-              <a href="investimento-personalizado.html" class="btn palet_lar1">Ler Mais</a>
-            </div>
+            <div class="card h-100">
+                <img src="Imagem/03CARD - GEISA-Recuperado.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Como Direcionar Melhor meus Gastos</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                    <a href="meus-gastos.html" class="btn palet_lar1">Ler Mais</a>
+                </div>
 
-          </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+        <div class="col">
+            <div class="card h-100">
+                <img src="Imagem/04CARD.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Perfil do Investidor</h5>
+                    <p class="card-text">Descubra seu perfil investidor e os diversos tipos de investimentos.</p>
+                    <a href="perfil-investidor.html" class="btn palet_lar1">Ler Mais</a>
+                </div>
+            </div>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="Imagem/06CARD BannerCardCalculadoraJuros.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Calculadora de Juros</h5>
-              <p class="card-text">Quer saber quanto seus investimentos podem render? Nossa calculadora de juros te mostra, de forma simples e rápida, o potencial de crescimento do seu patrimônio.</p>
-              <a href="calculadora-juros.html" class="btn palet_lar1">Ler Mais</a>
-            </div>
+            <div class="card h-100">
+                <img src="Imagem/05 CARD banner-investimentocarol.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Investimento Personalizado</h5>
+                    <p class="card-text">Invista em você. Conheça os investimentos que combinam com o seu perfil e
+                        alcance seus objetivos mais rápido.</p>
+                    <a href="investimento-personalizado.html" class="btn palet_lar1">Ler Mais</a>
+                </div>
 
-          </div>
+            </div>
         </div>
-      </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="Imagem/06CARD BannerCardCalculadoraJuros.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Calculadora de Juros</h5>
+                    <p class="card-text">Quer saber quanto seus investimentos podem render? Nossa calculadora de juros
+                        te mostra, de forma simples e rápida, o potencial de crescimento do seu patrimônio.</p>
+                    <a href="calculadora-juros.html" class="btn palet_lar1">Ler Mais</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 
@@ -334,7 +348,8 @@
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
             <div>
-                <p style="color: white;">Este site é resultado de um projeto acadêmico, desenvolvido com fins educacionais. As informações
+                <p style="color: white;">Este site é resultado de um projeto acadêmico, desenvolvido com fins
+                    educacionais. As informações
                     aqui disponibilizadas podem conter erros ou imprecisões, e estão sujeitas a revisões e correções.
                     Recomenda-se a consulta de fontes adicionais para verificar a exatidão dos dados apresentados.</p>
             </div>
