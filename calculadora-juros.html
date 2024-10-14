@@ -24,8 +24,8 @@
                 <form id="formularioDados">
 
                     <div class="campo-tipo-juros">
-                        <label for="tipo-juros" data-bs-toggle="tooltip" data-bs-title="JUROS COMPOSTOS é o juros rendido baseado no valor + juros.
-                        JUROS SIMPLES é o juros rendido baseado no valor.">SELECIONE O TIPO DE JUROS</label>
+                        <label for="tipo-juros" data-bs-toggle="tooltip" data-bs-title="JUROS COMPOSTOS é o juros rendido baseado no montante.
+                        JUROS SIMPLES é o juros rendido baseado no CAPITAL.">SELECIONE O TIPO DE JUROS</label>
                         <select class="juros" id="tipo-juros" required>
                             <option value="juros-compostos">Juros Compostos</option>
                             <option value="juros-simples">Juros Simples</option>
@@ -56,7 +56,7 @@
                     </div>
 
                     <div class="campo-aporte">
-                        <label for="aporte" data-bs-toggle="tooltip" data-bs-title="APORTE MENSAL é a quantida que será adicionada todos os meses">APORTE MENSAL</label>
+                        <label for="aporte" data-bs-toggle="tooltip" data-bs-title="APORTE MENSAL é a quantida que será adicionada ao longo do período.">APORTE MENSAL</label>
                         <input type="text" class="dinheiro aporte" id="aporte-mensal"
                             placeholder="R$ 0,00" required>
                     </div>

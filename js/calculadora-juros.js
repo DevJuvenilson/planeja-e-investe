@@ -159,21 +159,21 @@ async function calcularJurosSimples(capitalInicial, meses, aporteMensal, taxaJur
 
         if (periodo === 'anual') {
             if (aporteMensal > 0) {
-                alert('Aporte mensal só pode ser inserido em juros rendidos mensalmente e no regime de juros COMPOSTOS!');
+                alert('Aporte mensal só pode ser inserido em juros rendidos mensalmente!')
             } else {
                 var saldoTotal = parseFloat(capitalInicial) + parseFloat(capitalInicial * taxa * anos.value);
             }
 
         } else if (periodo === 'mensal') {
             if (aporteMensal > 0) {
-                alert('Aporte mensal só pode ser inserido em juros rendidos mensalmente e no regime de juros COMPOSTOS!');
+                var saldoTotal = capitalInicial + (capitalInicial * taxa * parseFloat(meses)) + (aporteMensal * taxa * (((parseFloat(meses) + 1) * parseFloat(meses)) / 2));
             } else {
                 var saldoTotal = parseFloat(capitalInicial) + parseFloat(capitalInicial * taxa * meses);
             }
 
         } else if (periodo === 'diario') {
             if (aporteMensal > 0) {
-                alert('Aporte mensal só pode ser inserido em juros rendidos mensalmente e no regime de juros COMPOSTOS!');
+                alert('Aporte mensal só pode ser inserido em juros rendidos mensalmente!')
             } else {
                 var saldoTotal = parseFloat(capitalInicial) + parseFloat(capitalInicial * taxa * dias.value);
             }
