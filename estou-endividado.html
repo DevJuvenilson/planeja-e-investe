@@ -121,7 +121,7 @@
         }
 
         .section img {
-            width: 100px;
+            width: 100%;
             margin-bottom: 20px;
         }
 
@@ -155,13 +155,11 @@
             line-height: 1.8;
         }
 
-        /* Rodapé */
-        footer {
-            background-color: #08415c;
-            color: rgb(255, 252, 252);
+        footer p {
+            color: #6c7573;
+            border-bottom: solid 1px #6c7573;
+            padding-bottom: 1em;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
         }
 
         footer a {
@@ -188,7 +186,7 @@
     </style>
 </head>
 
-<body>
+<body class="palet_azul">
 
     <!-- Cabeçalho -->
     <header>
@@ -244,7 +242,7 @@
     <!-- Seções principais -->
     <section class="sections">
         <div class="section">
-            <img src="organize suas finanças.png" alt="Organize suas Finanças">
+            <img src="Imagem/organize-financas.jpg" alt="Organize suas Finanças">
             <h3>Organize suas Finanças</h3>
             <p>Organizar suas finanças é crucial para alcançar a estabilidade financeira. Comece fazendo um diagnóstico
                 das suas receitas e despesas mensais para identificar onde gastar e economizar. Crie um orçamento,
@@ -256,7 +254,7 @@
         </div>
 
         <div class="section">
-            <img src="negocio de divida.png" alt="Negocie suas Dívidas">
+            <img src="Imagem/negocie-dividas.jpg" alt="Negocie suas Dívidas">
             <h3>Negocie suas Dívidas</h3>
             <p>Negociar dívidas pode ser desafiador, mas é essencial para recuperar o controle financeiro. Comece
                 fazendo uma lista de todas as suas dívidas, com valores e credores. Entre em contato com os credores,
@@ -268,7 +266,7 @@
         </div>
 
         <div class="section">
-            <img src="planejamento-icon.png" alt="Planejamento Financeiro">
+            <img src="Imagem/planeje-financas.jpg" alt="Planejamento Financeiro">
             <h3>Planejamento Financeiro</h3>
             <p>Para manter suas finanças sob controle e evitar dívidas no futuro, comece avaliando sua situação
                 financeira e criando um orçamento mensal. Estabeleça metas financeiras claras e crie um fundo de
@@ -298,14 +296,27 @@
             futuro.</p>
     </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Estou Endividado. Todos os direitos reservados. <a href="#">Política de Privacidade</a></p>
-    </footer>
+    <!-- INICIO R0DAPÉ-->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+            <div>
+                <p style="color: white;">Este site é resultado de um projeto acadêmico, desenvolvido com fins
+                    educacionais. As informações
+                    aqui disponibilizadas podem conter erros ou imprecisões, e estão sujeitas a revisões e correções.
+                    Recomenda-se a consulta de fontes adicionais para verificar a exatidão dos dados apresentados.</p>
+            </div>
+            <div class="col-md-4 d-flex align-items-center  ">
+                <a class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <img src="Imagem/logo geisa branco.png" alt="" class="bi" width="30">
+                </a>
+                <span class="mb-3 mb-md-0" style="color: white;">&copy; 2024 Planeja & Investe</span>
+            </div>
+        </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 <div vw class="enabled">
     <div vw-access-button class="active"></div>
