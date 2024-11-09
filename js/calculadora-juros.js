@@ -166,7 +166,10 @@ async function calcularJurosSimples(capitalInicial, meses, aporteMensal, taxaJur
 
         } else if (periodo === 'mensal') {
             if (aporteMensal > 0) {
-                var saldoTotal = capitalInicial + (capitalInicial * taxa * parseFloat(meses)) + (aporteMensal * taxa * (((parseFloat(meses) + 1) * parseFloat(meses)) / 2));
+                const mesesEmNumero = parseFloat(meses);
+                var jurosSobreAporte = aporteMensal * taxa * (((mesesEmNumero - 1) * mesesEmNumero) / 2);
+
+                var saldoTotal = (capitalInicial + (capitalInicial * taxa * mesesEmNumero) + (aporteMensal * meses) + jurosSobreAporte);
             } else {
                 var saldoTotal = parseFloat(capitalInicial) + parseFloat(capitalInicial * taxa * meses);
             }
@@ -177,10 +180,14 @@ async function calcularJurosSimples(capitalInicial, meses, aporteMensal, taxaJur
             } else {
                 var saldoTotal = parseFloat(capitalInicial) + parseFloat(capitalInicial * taxa * dias.value);
             }
-
         }
 
-        const jurosRendidos = saldoTotal - parseFloat(capitalInicial);
+        if (aporteMensal > 0) {
+            var jurosRendidos = ((capitalInicial * taxa * meses) + jurosSobreAporte );
+        } else {
+            var jurosRendidos = (capitalInicial * taxa * meses);
+        }
+        
         const campoSaldoTotal = document.getElementById('valor-calculado');
         const campoJurosGerados = document.getElementById('juros-gerados');
 
