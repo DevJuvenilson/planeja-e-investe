@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estou Endividado?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/grt5aji.css">
+
+    <link rel="shortcut icon" href="Imagem/favicon.ico" type="image/x-icon">
     <style>
         * {
             margin: 0;
@@ -11,19 +17,21 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f2f5;
-            color: #fff6f6;
-            line-height: 1.6;
+        p {
+            text-align: justify;
+            margin: 15px;
         }
 
-        /* Cabeçalho */
-        header {
+        .palet_azul {
             background-color: #08415c;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
+        }
+
+        .palet_lar1 {
+            background-color: #e3170a;
+        }
+
+        .palet_lar {
+            background-color: #df572a;
         }
 
         nav {
@@ -39,7 +47,33 @@
             text-decoration: none;
             font-size: 1.2rem;
         }
-        
+
+        .a_font {
+            color: white;
+            font-family: "alfarn", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .navbar-collapse {
+            box-sizing: border-box;
+        }
+
+        .navbar-toggler {
+            border-color: white;
+            /* Altere para a cor desejada */
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .a_font:hover {
+            color: #df572a;
+        }
+
         h2 {
             color: #08415c;
             font-weight: bold;
@@ -58,7 +92,8 @@
         .banner img {
             width: 100%;
             height: auto;
-            object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+            object-fit: cover;
+            /* Garante que a imagem preencha o espaço sem distorção */
             display: block;
         }
 
@@ -122,7 +157,7 @@
 
         /* Rodapé */
         footer {
-            background-color:#08415c;
+            background-color: #08415c;
             color: rgb(255, 252, 252);
             text-align: center;
             padding: 20px 0;
@@ -152,15 +187,51 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Cabeçalho -->
     <header>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="#">Finanças</a>
-            <a href="#">Negociar Dívidas</a>
-            <a href="#">Contato</a>
+        <nav class="navbar navbar-expand-lg  palet_azul">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="Imagem/Logo-P&I.png" class="m-1" width="50">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link a_font" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle a_font" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                GRUPOS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="estou-endividado.html">Estou Endividado(a)?</a></li>
+                                <li><a class="dropdown-item" href="planejamento.html">Organização Familiar</a></li>
+                                <li><a class="dropdown-item" href="meus-gastos.html">Meus Gastos</a></li>
+                                <li><a class="dropdown-item" href="perfil-investidor.html">Perfil do Investidor</a></li>
+                                <li><a class="dropdown-item" href="investimento-personalizado.html">Investimento
+                                        Personalizado</a></li>
+                                <li><a class="dropdown-item" href="calculadora-juros.html">Calculadora de Juros</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link a_font" href="https://www.sesisp.org.br/">SESI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link a_font" href="https://www.sp.senai.br/">SENAI</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -175,31 +246,56 @@
         <div class="section">
             <img src="organize suas finanças.png" alt="Organize suas Finanças">
             <h3>Organize suas Finanças</h3>
-            <p>Organizar suas finanças é crucial para alcançar a estabilidade financeira. Comece fazendo um diagnóstico das suas receitas e despesas mensais para identificar onde gastar e economizar. Crie um orçamento, dividindo suas despesas em categorias e definindo limites de gastos, priorizando despesas essenciais e reservando parte da renda para poupança. Controle seus gastos usando aplicativos ou planilhas e busque eliminar dívidas de alto custo. Por fim, estabeleça metas financeiras de curto, médio e longo prazo, como viajar ou se preparar para a aposentadoria. Com disciplina e um plano claro, você estará no caminho certo para uma vida financeira saudável.</p>
+            <p>Organizar suas finanças é crucial para alcançar a estabilidade financeira. Comece fazendo um diagnóstico
+                das suas receitas e despesas mensais para identificar onde gastar e economizar. Crie um orçamento,
+                dividindo suas despesas em categorias e definindo limites de gastos, priorizando despesas essenciais e
+                reservando parte da renda para poupança. Controle seus gastos usando aplicativos ou planilhas e busque
+                eliminar dívidas de alto custo. Por fim, estabeleça metas financeiras de curto, médio e longo prazo,
+                como viajar ou se preparar para a aposentadoria. Com disciplina e um plano claro, você estará no caminho
+                certo para uma vida financeira saudável.</p>
         </div>
 
         <div class="section">
             <img src="negocio de divida.png" alt="Negocie suas Dívidas">
             <h3>Negocie suas Dívidas</h3>
-            <p>Negociar dívidas pode ser desafiador, mas é essencial para recuperar o controle financeiro. Comece fazendo uma lista de todas as suas dívidas, com valores e credores. Entre em contato com os credores, sendo honesto sobre sua situação e pedindo melhores condições, como redução de juros. Prepare-se para negociar, definindo um valor que você pode pagar mensalmente e esteja disposto a fazer contrapropostas. Considere consolidar suas dívidas para facilitar o pagamento e, se necessário, busque ajuda profissional de organizações ou consultores financeiros. Com paciência e determinação, você pode renegociar suas dívidas e alcançar a tranquilidade financeira.</p>
+            <p>Negociar dívidas pode ser desafiador, mas é essencial para recuperar o controle financeiro. Comece
+                fazendo uma lista de todas as suas dívidas, com valores e credores. Entre em contato com os credores,
+                sendo honesto sobre sua situação e pedindo melhores condições, como redução de juros. Prepare-se para
+                negociar, definindo um valor que você pode pagar mensalmente e esteja disposto a fazer contrapropostas.
+                Considere consolidar suas dívidas para facilitar o pagamento e, se necessário, busque ajuda profissional
+                de organizações ou consultores financeiros. Com paciência e determinação, você pode renegociar suas
+                dívidas e alcançar a tranquilidade financeira.</p>
         </div>
 
         <div class="section">
             <img src="planejamento-icon.png" alt="Planejamento Financeiro">
             <h3>Planejamento Financeiro</h3>
-            <p>Para manter suas finanças sob controle e evitar dívidas no futuro, comece avaliando sua situação financeira e criando um orçamento mensal. Estabeleça metas financeiras claras e crie um fundo de emergência para imprevistos. Invista em educação financeira e controle seus gastos anotando tudo. Use o crédito com cautela, revisite seu orçamento regularmente e considere buscar fontes de renda extra. O mais importante é manter a disciplina e compromisso com seus objetivos financeiros.</p>
+            <p>Para manter suas finanças sob controle e evitar dívidas no futuro, comece avaliando sua situação
+                financeira e criando um orçamento mensal. Estabeleça metas financeiras claras e crie um fundo de
+                emergência para imprevistos. Invista em educação financeira e controle seus gastos anotando tudo. Use o
+                crédito com cautela, revisite seu orçamento regularmente e considere buscar fontes de renda extra. O
+                mais importante é manter a disciplina e compromisso com seus objetivos financeiros.</p>
         </div>
     </section>
 
     <!-- Seção sobre como sair do endividamento -->
     <section class="debt-section">
         <h2>Como Sair do Endividamento</h2>
-        
-        <p>Sair do endividamento pode parecer uma tarefa difícil, mas com planejamento e disciplina, é totalmente possível. O primeiro passo é ter clareza da sua situação financeira. Faça uma lista de todas as suas dívidas: o valor total, os juros e os prazos de cada uma. Assim, você tem uma visão geral do problema e pode traçar um plano de ação.</p>
-        <p>Depois, monte um orçamento realista, incluindo todas as suas despesas essenciais e corte gastos desnecessários. Esse controle é fundamental para liberar mais dinheiro para pagar as dívidas.</p>
-        <p>Outra dica importante é priorizar as dívidas com os maiores juros, como cartões de crédito e cheque especial, pois elas crescem muito rápido. Se possível, negocie com os credores para conseguir melhores condições de pagamento, como redução dos juros ou parcelamento.</p>
-        <p>Considere também trocar uma dívida cara por uma mais barata, como pegar um empréstimo com juros menores para quitar uma dívida maior. Assim, você reduz o custo total.</p>
-        <p>Por fim, mude seus hábitos financeiros. Aprenda a economizar, crie uma reserva de emergência e evite novos empréstimos. Com essas atitudes, você vai não só sair das dívidas, mas também evitar cair nelas de novo no futuro.</p>
+
+        <p>Sair do endividamento pode parecer uma tarefa difícil, mas com planejamento e disciplina, é totalmente
+            possível. O primeiro passo é ter clareza da sua situação financeira. Faça uma lista de todas as suas
+            dívidas: o valor total, os juros e os prazos de cada uma. Assim, você tem uma visão geral do problema e pode
+            traçar um plano de ação.</p>
+        <p>Depois, monte um orçamento realista, incluindo todas as suas despesas essenciais e corte gastos
+            desnecessários. Esse controle é fundamental para liberar mais dinheiro para pagar as dívidas.</p>
+        <p>Outra dica importante é priorizar as dívidas com os maiores juros, como cartões de crédito e cheque especial,
+            pois elas crescem muito rápido. Se possível, negocie com os credores para conseguir melhores condições de
+            pagamento, como redução dos juros ou parcelamento.</p>
+        <p>Considere também trocar uma dívida cara por uma mais barata, como pegar um empréstimo com juros menores para
+            quitar uma dívida maior. Assim, você reduz o custo total.</p>
+        <p>Por fim, mude seus hábitos financeiros. Aprenda a economizar, crie uma reserva de emergência e evite novos
+            empréstimos. Com essas atitudes, você vai não só sair das dívidas, mas também evitar cair nelas de novo no
+            futuro.</p>
     </section>
 
     <!-- Rodapé -->
@@ -207,5 +303,19 @@
         <p>&copy; 2024 Estou Endividado. Todos os direitos reservados. <a href="#">Política de Privacidade</a></p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
 </html>

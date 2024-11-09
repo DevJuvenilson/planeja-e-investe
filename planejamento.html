@@ -45,12 +45,29 @@
         }
 
         .a_font {
-            color: #df572a;
+            color: white;
             font-family: "alfarn", sans-serif;
             font-weight: 400;
             font-style: normal;
             font-size: 18px;
             text-transform: uppercase;
+        }
+
+        .navbar-collapse {
+            box-sizing: border-box;
+        }
+
+        .navbar-toggler {
+            border-color: white;
+            /* Altere para a cor desejada */
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .a_font:hover {
+            color: #df572a;
         }
 
         .card {
@@ -77,16 +94,15 @@
         p {
             font-family: "Gothic A1", sans-serif;
         }
-        footer p{
+
+        footer p {
             color: #6c7573;
             border-bottom: solid 1px #6c7573;
             margin-bottom: 2em;
             padding-bottom: 1em;
             text-align: center;
-                       
+
         }
-
-
     </style>
 
 <body class="palet_azul">
@@ -112,42 +128,49 @@
         </symbol>
     </svg>
     <!-- INICIO MENU-->
-    <nav class="navbar navbar-expand-lg  palet_azul">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="Imagem/Logo-P&I.png" class="imglog m-1"
-                    style="width: 10%;"></a>
+    <header>
+        <nav class="navbar navbar-expand-lg  palet_azul">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="Imagem/Logo-P&I.png" class="m-1" width="50">
+                </a>
 
-            <div class="collapse navbar-collapse" id="navbarScroll" style="margin-left: -450px;">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link a_font" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link a_font" href="https://www.sesisp.org.br/">SESI</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link a_font" href="https://www.sp.senai.br/">SENAI</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle a_font" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            GRUPOS
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="estou-endividado.html">Estou Endividado(a)?</a></li>
-                            <li><a class="dropdown-item" href="planejamento.html">Organização Familiar</a></li>
-                            <li><a class="dropdown-item" href="meus-gastos.html">Meus Gastos</a></li>
-                            <li><a class="dropdown-item" href="perfil-investidor.html">Perfil do Investidor</a></li>
-                            <li><a class="dropdown-item" href="investimento-personalizado.html">Investimento
-                                    Personalizado</a></li>
-                            <li><a class="dropdown-item" href="calculadora-juros.html">Calculadora de Juros</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                        </ul>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link a_font" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle a_font" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                GRUPOS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="estou-endividado.html">Estou Endividado(a)?</a></li>
+                                <li><a class="dropdown-item" href="planejamento.html">Organização Familiar</a></li>
+                                <li><a class="dropdown-item" href="meus-gastos.html">Meus Gastos</a></li>
+                                <li><a class="dropdown-item" href="perfil-investidor.html">Perfil do Investidor</a></li>
+                                <li><a class="dropdown-item" href="investimento-personalizado.html">Investimento
+                                        Personalizado</a></li>
+                                <li><a class="dropdown-item" href="calculadora-juros.html">Calculadora de Juros</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link a_font" href="https://www.sesisp.org.br/">SESI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link a_font" href="https://www.sp.senai.br/">SENAI</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <!-- FIM MENU-->
 
     <hr>
@@ -294,12 +317,12 @@
                     </div>
                 </div>
             </div>
-           
+
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Planilha de Controle de Dividas</h5>
-                        <a href="planilhas/CONTROLE DE DIVIDAS.xlsx"class="btn btn-primary" download
+                        <a href="planilhas/CONTROLE DE DIVIDAS.xlsx" class="btn btn-primary" download
                             class="botao-download" style="background-color:#df572a">Baixar
                             Planilha</a>
                     </div>
@@ -319,8 +342,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Planilha de Acompanhamento de Investimentos</h5>
-                        <a href="planilhas/Planilha de Acompanhamento de Investimentos.xlsx" class="btn btn-primary" download
-                            class="botao-download" style="background-color:#df572a">Baixar
+                        <a href="planilhas/Planilha de Acompanhamento de Investimentos.xlsx" class="btn btn-primary"
+                            download class="botao-download" style="background-color:#df572a">Baixar
                             Planilha</a>
                     </div>
                 </div>
@@ -330,34 +353,21 @@
 
     <!-- INICIO R0DAPÉ-->
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 ">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
             <div>
-                <p>Este site é resultado de um projeto acadêmico, desenvolvido com fins educacionais. As informações aqui disponibilizadas podem conter erros ou imprecisões, e estão sujeitas a revisões e correções. Recomenda-se a consulta de fontes adicionais para verificar a exatidão dos dados apresentados.</p>
+                <p style="color: white;">Este site é resultado de um projeto acadêmico, desenvolvido com fins
+                    educacionais. As informações
+                    aqui disponibilizadas podem conter erros ou imprecisões, e estão sujeitas a revisões e correções.
+                    Recomenda-se a consulta de fontes adicionais para verificar a exatidão dos dados apresentados.</p>
             </div>
             <div class="col-md-4 d-flex align-items-center  ">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                    <svg class="bi" width="30" height="24">
-                        <use xlink:href="#bootstrap" />
-                    </svg>
+                <a class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <img src="Imagem/logo geisa branco.png" alt="" class="bi" width="30">
                 </a>
-                <span class="mb-3 mb-md-0 text-muted">&copy; 2022
-                    Company, Inc</span>
+                <span class="mb-3 mb-md-0" style="color: white;">&copy; 2024 Planeja & Investe</span>
             </div>
-
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#twitter" />
-                        </svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#instagram" />
-                        </svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#facebook" />
-                        </svg></a></li>
-            </ul>
         </footer>
     </div>
-    </center>
     <!-- FIM RODAPÉ-->
 
     <!-- Scripts -->
@@ -392,5 +402,16 @@
 
     </script>
 </body>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 
 </html>

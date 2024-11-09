@@ -27,10 +27,6 @@
             color: aliceblue;
         }
 
-        .imglog {
-            width: 15%;
-        }
-
         .palet_azul {
             background-color: #08415c;
         }
@@ -44,12 +40,29 @@
         }
 
         .a_font {
-            color: #df572a;
+            color: white;
             font-family: "alfarn", sans-serif;
             font-weight: 400;
             font-style: normal;
             font-size: 18px;
             text-transform: uppercase;
+        }
+
+        .navbar-collapse {
+            box-sizing: border-box;
+        }
+
+        .navbar-toggler {
+            border-color: white;
+            /* Altere para a cor desejada */
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .a_font:hover {
+            color: #df572a;
         }
 
         main {
@@ -84,7 +97,7 @@
             text-align: center;
         }
 
-        ul {
+        main ul {
             text-align: justify;
             margin: 15px;
             color: aliceblue;
@@ -101,16 +114,19 @@
             text-decoration: underline;
             transform: scale(1.1);
         }
-        h1{color: #df572a;}
-        footer p{
+
+        h1 {
+            color: #df572a;
+        }
+
+        footer p {
             color: #6c7573;
             border-bottom: solid 1px #6c7573;
             margin-bottom: 2em;
             padding-bottom: 1em;
             text-align: center;
-                       
-        }
 
+        }
     </style>
 </head>
 
@@ -138,42 +154,49 @@
         </symbol>
     </svg>
     <!-- INICIO MENU-->
-    <nav class="navbar navbar-expand-lg  palet_azul">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="Imagem/Logo-P&I.png" class="imglog m-1"
-                    style="width: 10%;"></a>
+    <header>
+        <nav class="navbar navbar-expand-lg  palet_azul">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="Imagem/Logo-P&I.png" class="m-1" width="50">
+                </a>
 
-            <div class="collapse navbar-collapse" id="navbarScroll" style="margin-left: -450px;">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link a_font" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link a_font" href="https://www.sesisp.org.br/">SESI</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link a_font" href="https://www.sp.senai.br/">SENAI</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle a_font" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            GRUPOS
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="estou-endividado.html">Estou Endividado(a)?</a></li>
-                            <li><a class="dropdown-item" href="planejamento.html">Organização Familiar</a></li>
-                            <li><a class="dropdown-item" href="meus-gastos.html">Meus Gastos</a></li>
-                            <li><a class="dropdown-item" href="perfil-investidor.html">Perfil do Investidor</a></li>
-                            <li><a class="dropdown-item" href="investimento-personalizado.html">Investimento
-                                    Personalizado</a></li>
-                            <li><a class="dropdown-item" href="calculadora-juros.html">Calculadora de Juros</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                        </ul>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link a_font" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle a_font" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                GRUPOS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="estou-endividado.html">Estou Endividado(a)?</a></li>
+                                <li><a class="dropdown-item" href="planejamento.html">Organização Familiar</a></li>
+                                <li><a class="dropdown-item" href="meus-gastos.html">Meus Gastos</a></li>
+                                <li><a class="dropdown-item" href="perfil-investidor.html">Perfil do Investidor</a></li>
+                                <li><a class="dropdown-item" href="investimento-personalizado.html">Investimento
+                                        Personalizado</a></li>
+                                <li><a class="dropdown-item" href="calculadora-juros.html">Calculadora de Juros</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link a_font" href="https://www.sesisp.org.br/">SESI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link a_font" href="https://www.sp.senai.br/">SENAI</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
@@ -185,7 +208,7 @@
 
     <main style="border-bottom: #df572a solid 3px;">
         <h1 id="titulo">O que você quer saber sobre direcionamento de gastos?</h1>
-        <div class="row" >
+        <div class="row">
 
             <div class="card col 3 botoes" style="width: 18rem; height: 5rem;">
                 <a href="#1" class="card-body ">
@@ -266,7 +289,8 @@
                 automaticamente.</li>
             </ul>
             </p>
-            <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo" role="button">Início</a>
+            <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
+                role="button">Início</a>
         </div>
         <br>
         <br>
@@ -298,7 +322,8 @@
                 </li>
             </ul>
             </p>
-            <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo" role="button">Início</a>
+            <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
+                role="button">Início</a>
         </div>
         <br>
 
@@ -315,7 +340,8 @@
                 <li>Compre no atacado ou use cupons para economizar em compras essenciais.</li>
             </ul>
             </p>
-            <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo" role="button">Início</a>
+            <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
+                role="button">Início</a>
         </div>
         <br>
         <br>
@@ -352,7 +378,8 @@
 
             <p>Com um fundo de emergência sólido e uma carteira de investimentos diversificada, você estará mais apto a
                 responder a emergências e buscar crescimento financeiro.</p>
-                <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo" role="button">Início</a>
+            <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
+                role="button">Início</a>
         </div>
         <br><br>
         <div id="5"></div>
@@ -389,7 +416,8 @@
         <p>Essas dicas podem ajudá-lo a recuperar o controle de suas finanças e a se concentrar em economizar e investir
             no seu futuro!
         </p>
-        <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo" role="button">Início</a>
+        <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
+            role="button">Início</a>
 
         </div>
         <br><br>
@@ -465,7 +493,8 @@
                     consumo, mudando assim o comportamento do consumidor.</br>
                 </li>
             </ul>
-            <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo" role="button">Início</a></p>
+            <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
+                role="button">Início</a></p>
             <div id="7">
                 <h1>Direcionamento de gastos para atingir metas financeiras específicas.</h1>
                 <p>Com metas definidas do o que queremos alcançar com o nosso dinheiro, é importante seguir alguns
@@ -488,61 +517,79 @@
                 </ul>
                 <ul>Lembre-se de sempre fazer alterações em seu orçamento conforme necessário!</ul>
 
-                <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo" role="button">Início</a></p>
-                
+                <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
+                    role="button">Início</a></p>
+
             </div>
-            
+
         </div>
         <br><br>
         <div id="8"></div>
-            <h1>Comparação de diferentes métodos de gestão de gastos</h1>
-            <p>
-                Existem diversas maneiras de administrar seus gastos, escolha aquele que você se adaptar e se identificar mais!
-            </p>
-                <ul><Li><b>Simplicidade</b><br> O orçamento tradicional é o mais fácil de implementar, enquanto o orçamento base zero exige mais esforço.</Li></ul>
-                <ul><Li><b>Flexibilidade</b><br>O orçamento contínuo e o flexível oferecem maior adaptabilidade a mudanças, sendo mais indicados para ambientes voláteis.</Li></ul>
-                <ul><Li><b>Eficiência</b><br>O orçamento base zero promove a eliminação de gastos supérfluos, enquanto o tradicional tende a manter práticas passadas.</Li></ul>
-                <ul><Li><b>Foco no Futuro</b><br> O orçamento contínuo destaca-se por manter um planejamento atualizado e constante, enquanto o orçamento tradicional pode ser mais estático.</Li></ul>
-             
-             <p>A escolha do método de gestão de gastos depende do contexto e dos objetivos da organização ou indivíduo. Para empresas focadas em eficiência, o orçamento base zero pode ser ideal, enquanto aquelas em ambientes dinâmicos podem preferir o orçamento contínuo ou flexível. Por outro lado, o orçamento tradicional ainda é uma opção viável para organizações com operações estáveis e previsíveis.</p>
-           
-             <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo" role="button">Início</a>
+        <h1>Comparação de diferentes métodos de gestão de gastos</h1>
+        <p>
+            Existem diversas maneiras de administrar seus gastos, escolha aquele que você se adaptar e se identificar
+            mais!
+        </p>
+        <ul>
+            <Li><b>Simplicidade</b><br> O orçamento tradicional é o mais fácil de implementar, enquanto o orçamento base
+                zero exige mais esforço.</Li>
+        </ul>
+        <ul>
+            <Li><b>Flexibilidade</b><br>O orçamento contínuo e o flexível oferecem maior adaptabilidade a mudanças,
+                sendo mais indicados para ambientes voláteis.</Li>
+        </ul>
+        <ul>
+            <Li><b>Eficiência</b><br>O orçamento base zero promove a eliminação de gastos supérfluos, enquanto o
+                tradicional tende a manter práticas passadas.</Li>
+        </ul>
+        <ul>
+            <Li><b>Foco no Futuro</b><br> O orçamento contínuo destaca-se por manter um planejamento atualizado e
+                constante, enquanto o orçamento tradicional pode ser mais estático.</Li>
+        </ul>
+
+        <p>A escolha do método de gestão de gastos depende do contexto e dos objetivos da organização ou indivíduo. Para
+            empresas focadas em eficiência, o orçamento base zero pode ser ideal, enquanto aquelas em ambientes
+            dinâmicos podem preferir o orçamento contínuo ou flexível. Por outro lado, o orçamento tradicional ainda é
+            uma opção viável para organizações com operações estáveis e previsíveis.</p>
+
+        <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
+            role="button">Início</a>
         </div>
         <br><br><br>
     </main>
     <!-- INICIO R0DAPÉ-->
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 ">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
             <div>
-                <p>Este site é resultado de um projeto acadêmico, desenvolvido com fins educacionais. As informações aqui disponibilizadas podem conter erros ou imprecisões, e estão sujeitas a revisões e correções. Recomenda-se a consulta de fontes adicionais para verificar a exatidão dos dados apresentados.</p>
-            </div>  
-            <div class="col-md-4 d-flex align-items-center  ">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                    <svg class="bi" width="30" height="24">
-                        <use xlink:href="#bootstrap" />
-                    </svg>
-                </a>
-                <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+                <p style="color: white;">Este site é resultado de um projeto acadêmico, desenvolvido com fins
+                    educacionais. As informações
+                    aqui disponibilizadas podem conter erros ou imprecisões, e estão sujeitas a revisões e correções.
+                    Recomenda-se a consulta de fontes adicionais para verificar a exatidão dos dados apresentados.</p>
             </div>
-
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#twitter" />
-                        </svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#instagram" />
-                        </svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#facebook" />
-                        </svg></a></li>
-            </ul>
+            <div class="col-md-4 d-flex align-items-center  ">
+                <a class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <img src="Imagem/logo geisa branco.png" alt="" class="bi" width="30">
+                </a>
+                <span class="mb-3 mb-md-0" style="color: white;">&copy; 2024 Planeja & Investe</span>
+            </div>
         </footer>
     </div>
     <!-- FIM RODAPÉ-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-
 </body>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 
 </html>
