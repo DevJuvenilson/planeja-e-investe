@@ -91,17 +91,43 @@
         .investidores {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: stretch;
+        }
 
+        @media (max-width: 800px) {
+            .investidores {
+                flex-direction: column;
+            }
         }
 
         .tipos {
             border-radius: 15px;
             background-color: #df572a;
             padding: 10px 30px 5px 30px;
-            margin: 0em 2em 2em 2em;
-            width: 23em;
-            height: 23em;
+            margin: 1em 2em;
+            width: 90%;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 800px) {
+            .tipos {
+                margin: 1em auto;
+            }
+        }
+
+        .tipos-investimentos{
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            margin: 0 7em;
+        }
+
+        @media (max-width: 800px) {
+            .tipos-investimentos {
+                align-items: center;
+                flex-direction: column;
+                margin: 0 auto;
+            }
         }
 
         .tipos2 {
@@ -110,28 +136,62 @@
             color: #effafa;
             margin: 1em;
             padding: 0.5em;
-            width: 10em;
-            height: 3em;
+            width: 90%;
         }
 
-        .tipos3 {
-            border: solid #effafa 1px;
-            border-radius: 15px;
-            margin: 0.5em;
-            color: #effafa;
-            padding: 0.5em;
-            width: 25em;
-            height: 40em;
+        @media (max-width: 800px) {
+            .tipos2 {
+                width: 80%;
+            }
         }
 
-        .tipos4 {
+        .container-tipos-investimentos{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .intro2 {
+            padding: 1em 0.5em;
+            margin: 0 4em;
+        }
+
+        @media (max-width: 800px) {
+            .intro2 {
+                margin: 1em auto;
+            }
+        }
+
+        .investimentos{
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            box-sizing: border-box;
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        @media (max-width: 800px) {
+            .investimentos {
+                flex-direction: column;
+            }
+        }
+
+        .tipos3, .tipos4 {
             border: solid #effafa 1px;
             border-radius: 15px;
-            margin: 0.5em;
+            margin: 1em;
             color: #effafa;
             padding: 0.5em;
-            width: 25em;
-            height: 31em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 800px) {
+            .tipos3, .tipos4 {
+                margin: 1em auto;
+            }
         }
 
         .t1 {
@@ -332,8 +392,7 @@
                 </div>
             </div>
             <div style="background-color: #df572a;">
-                <div class="mx-5">
-                    <br>
+                <div class="container-tipos-investimentos">
                     <div class="intro2">
                         <h3>Tipos de Investimento</h3>
                         <p>Dentro do ramo econômico, existem diversos tipos de investimentos, porém para que você saiba
@@ -344,7 +403,7 @@
                             tipos de perfis,
                             vamos descobrir os tipos de investimentos!</p>
                     </div>
-                    <div class="investidores">
+                    <div class="tipos-investimentos">
                         <div class="tipos2">
                             <h5 class="pt-1">LCI</h5>
                         </div>
@@ -364,7 +423,7 @@
                             <h5 class="pt-1">CRIPTOMOEDA</h5>
                         </div>
                     </div>
-                    <div class="investidores">
+                    <div class="investimentos">
                         <div class="tipos3">
                             <h5 class="mt-3">Letra de Crédito Imobiliário</h5>
                             <p class="elemento"><strong> Indicado para o perfil:</strong> Conservador/ Moderado</p>
@@ -413,7 +472,7 @@
                                 <strong>disposto a assumir mais riscos</strong>.
                         </div>
                     </div>
-                    <div class="investidores">
+                    <div class="investimentos">
                         <div class="tipos4">
                             <h5 class="mt-3">Certificado de Depósito Bancário</h5>
                             <p class="elemento"><strong> Indicado para o perfil:</strong> Conservador/ Moderado</p>
