@@ -124,7 +124,7 @@
             transform: scale(1.1);
         }
 
-        .perfil-investidor{
+        .perfil-investidor {
             color: rgb(245, 245, 245);
             text-decoration: underline;
             text-transform: uppercase;
@@ -132,14 +132,37 @@
             font-size: 18px;
         }
 
-        .perfil-investidor:hover{
+        .perfil-investidor:hover {
             color: #df572a;
             text-decoration: underline;
         }
 
+        /* Estilo do botão fixo */
+        .fixed-button {
+            position: fixed; /* Fixa o botão na tela */
+            bottom: 20px;    /* Alinha o botão 20px acima da borda inferior */
+            right: 20px;     /* Alinha o botão 20px à esquerda da borda direita */
+            padding: 10px 20px;
+            background-color: #df572a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            font-family: 'alfarn';
+        }
+
+        /* Efeito ao passar o mouse */
+        .fixed-button:hover {
+            background-color: #b3411b;
+            color: #fff;
+        }
+
         h1 {
             color: #df572a;
-            font-family: 'alfarn' sans-serif;
+            font-family: 'alfarn';
         }
 
         footer p {
@@ -311,10 +334,10 @@
                 automaticamente.</li>
             </ul>
             </p>
-            <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
-                role="button">Início</a>
+
+            <!-- Botão fixo -->
+            <a class="fixed-button" href="#titulo">INÍCIO</a>
         </div>
-        <br>
         <br>
         <div id="2">
             <h1>Metódos para um orçamento eficaz</h1>
@@ -344,11 +367,8 @@
                 </li>
             </ul>
             </p>
-            <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
-                role="button">Início</a>
         </div>
         <br>
-
         <div id="3">
             <h1>Dicas práticas para reduzir despesas e economizar</h1>
             <p>
@@ -362,10 +382,7 @@
                 <li>Compre no atacado ou use cupons para economizar em compras essenciais.</li>
             </ul>
             </p>
-            <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
-                role="button">Início</a>
         </div>
-        <br>
         <br>
         <div id="4">
             <h1>Investimentos adequados e como construir um fundo de emergência</h1>
@@ -376,7 +393,8 @@
             <p>Depois de criar seu fundo de emergência, é hora de investir e focar em seus objetivos de médio e longo
                 prazo.</p>
 
-            <p><a href="perfil-investidor.html" target="_blank" class="perfil-investidor">Determine seu perfil de investidor:</a></p>
+            <p><a href="perfil-investidor.html" target="_blank" class="perfil-investidor">Determine seu perfil de
+                    investidor:</a></p>
             <ul>
                 <li>Conservador: Coloque a segurança e a especulação em primeiro lugar.</li>
                 <li>Médio: Aceite risco controlado para retornos mais elevados.</li>
@@ -401,10 +419,8 @@
 
             <p>Com um fundo de emergência sólido e uma carteira de investimentos diversificada, você estará mais apto a
                 responder a emergências e buscar crescimento financeiro.</p>
-            <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
-                role="button">Início</a>
         </div>
-        <br><br>
+        <br>
         <div id="5"></div>
         <h1>Efeitos das dívidas nas finanças e como gerenciá-las</h1>
         <ul>
@@ -439,11 +455,8 @@
         <p>Essas dicas podem ajudá-lo a recuperar o controle de suas finanças e a se concentrar em economizar e investir
             no seu futuro!
         </p>
-        <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
-            role="button">Início</a>
-
         </div>
-        <br><br>
+        <br>
         <div id="6">
             <h1>Como mudanças econômicas afetam os gastos pessoais e planejamento financeiro</h1>
             <p>
@@ -516,37 +529,29 @@
                     consumo, mudando assim o comportamento do consumidor.</br>
                 </li>
             </ul>
-            <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
-                role="button">Início</a></p>
-            <div id="7">
-                <h1>Direcionamento de gastos para atingir metas financeiras específicas.</h1>
-                <p>Com metas definidas do o que queremos alcançar com o nosso dinheiro, é importante seguir alguns
-                    passos para que esses objetivos dejamalcançados da melhor forma possível:
-                <ul><b style="font-size: 18px;">Estabeleça metas claras para o qual você vai direcionar seu
-                        dinheiro:</b>
-                    <li>Curto prazo (viagens ou contas pequenas).</li>
-                    <li>Meia palavra (Seguro automóvel ou acidentes).</li>
-                    <li>Longo prazo (Aposentadoria ou compra de casa própria).</li>
-                </ul>
-
-                <ul><b style="font-size: 18px;">Crie um Orçamento </b>
-                    <li><b>Lista de Receitas e Despesas:</b> Identifique fontes de receitas e aloque despesas.</li>
-                    <Li><b>Valor de Alocação:</b> Alocar uma parcela dos recursos para cada finalidade.</Li>
-                </ul>
-
-                <ul><b style="font-size: 18px;">Revisão de Progresso</b>
-                    <li><b>Revisão Mensal:</b> Revise e ajuste seu orçamento regularmente.</li>
-                    <li>Comemore: Anote o progresso feito.</li>
-                </ul>
-                <ul>Lembre-se de sempre fazer alterações em seu orçamento conforme necessário!</ul>
-
-                <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
-                    role="button">Início</a></p>
-
-            </div>
-
         </div>
-        <br><br>
+        <br>
+        <div id="7">
+            <h1>Direcionamento de gastos para atingir metas financeiras específicas.</h1>
+            <p>Com metas definidas do o que queremos alcançar com o nosso dinheiro, é importante seguir alguns
+                passos para que esses objetivos dejamalcançados da melhor forma possível:
+            <ul><b style="font-size: 18px;">Estabeleça metas claras para o qual você vai direcionar seu
+                    dinheiro:</b>
+                <li>Curto prazo (viagens ou contas pequenas).</li>
+                <li>Meia palavra (Seguro automóvel ou acidentes).</li>
+                <li>Longo prazo (Aposentadoria ou compra de casa própria).</li>
+            </ul>
+            <ul><b style="font-size: 18px;">Crie um Orçamento </b>
+                <li><b>Lista de Receitas e Despesas:</b> Identifique fontes de receitas e aloque despesas.</li>
+                <Li><b>Valor de Alocação:</b> Alocar uma parcela dos recursos para cada finalidade.</Li>
+            </ul>
+            <ul><b style="font-size: 18px;">Revisão de Progresso</b>
+                <li><b>Revisão Mensal:</b> Revise e ajuste seu orçamento regularmente.</li>
+                <li>Comemore: Anote o progresso feito.</li>
+            </ul>
+            <ul>Lembre-se de sempre fazer alterações em seu orçamento conforme necessário!</ul>
+        </div>
+        <br>
         <div id="8"></div>
         <h1>Comparação de diferentes métodos de gestão de gastos</h1>
         <p>
@@ -574,11 +579,9 @@
             empresas focadas em eficiência, o orçamento base zero pode ser ideal, enquanto aquelas em ambientes
             dinâmicos podem preferir o orçamento contínuo ou flexível. Por outro lado, o orçamento tradicional ainda é
             uma opção viável para organizações com operações estáveis e previsíveis.</p>
-
-        <a class="btn" style="background-color: #df572a; color:aliceblue; margin-left: 40px;" href="#titulo"
-            role="button">Início</a>
         </div>
-        <br><br><br>
+        <br>
+        <br>
     </main>
     <!-- INICIO R0DAPÉ-->
     <div class="container">
