@@ -64,7 +64,60 @@
             color: rgb(255, 255, 255);
             line-height: 1, 5em;
             font-size: 24px;
-            text-indent: 1em
+            text-indent: 1em;
+            margin: 0;
+        }
+
+        .texto-imagem {
+            padding: 0;
+            margin: 20px;
+            display: flex;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .texto-inicial {
+            padding: 10px;
+            box-sizing: border-box;
+            width: 70%;
+        }
+
+        .imagem-inicial {
+            padding: 10px;
+            box-sizing: border-box;
+            width: 30%;
+        }
+
+        @media (max-width: 1024px) {
+            .texto-imagem {
+                flex-direction: column;
+            }
+
+            .texto-inicial {
+                width: 90%;
+            }
+
+            .imagem-inicial {
+                width: 70%;
+            }
+        }
+
+        @media (max-width: 425px) {
+            .texto-imagem {
+                flex-direction: column;
+            }
+
+            .texto-inicial {
+                padding: 10px;
+                width: 100%;
+            }
+
+            .imagem-inicial {
+                padding: 10px;
+                width: 100%;
+            }
         }
 
         footer p {
@@ -210,8 +263,8 @@
     </div>
     <!-- FIM CARRO-->
     <!-- INICIO TEXTO E IMAGEM-->
-    <div class="row mt-3 mb-3 container-fluid">
-        <div class="col-sm-12 col-md-8 mat_f">
+    <div class="texto-imagem">
+        <div class="texto-inicial mat_f">
             <p>
                 Bem-vindo ao <b>Planeje e Invista</b>, um espaço dedicado ao
                 aprendizado sobre investimentos e administração de capital familiar, desenvolvido pelos estudantes do 2ª
@@ -235,7 +288,7 @@
             </p>
 
         </div>
-        <div class="col-sm-12 col-md-4 ">
+        <div class="imagem-inicial">
             <img src="Imagem/banner inicial 3.jpeg" style="width: 100%;">
         </div>
     </div>
@@ -275,7 +328,8 @@
                 <img src="Imagem/03CARD - GEISA-Recuperado.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Como Direcionar Melhor meus Gastos</h5>
-                    <p class="card-text">Transforme seu modo de lidar com o dinheiro: gerencie, direcione e acompanhe suas finanças de forma inteligente para alcançar suas metas com facilidade.</p>
+                    <p class="card-text">Transforme seu modo de lidar com o dinheiro: gerencie, direcione e acompanhe
+                        suas finanças de forma inteligente para alcançar suas metas com facilidade.</p>
                 </div>
                 <div class="card-footer">
                     <a href="meus-gastos.html" class="btn palet_lar1">Ler Mais</a>
