@@ -110,7 +110,7 @@
             border-radius: 10px;
             margin: 20px;
             padding: 30px;
-            max-width: 300px;
+            max-width: 400px;
             text-align: center;
             transition: transform 0.3s ease;
             box-shadow: 0px 8px 20px white(0 77% 16% / 0.1);
@@ -125,14 +125,19 @@
             margin-bottom: 20px;
         }
 
-        .section h3 {
+        .section h3, .section h3 > a {
             color: white;
             font-size: 1.5rem;
             margin-bottom: 10px;
+            font-family: 'alfarn';
+        }
+
+        .section h3 > a:hover{
+            color: #073449;
         }
 
         .section p {
-            color: #08415c;
+            color: #ffffff;
             line-height: 1.8;
         }
 
@@ -147,6 +152,7 @@
             font-size: 2rem;
             color: #df572a;
             margin-bottom: 20px;
+            font-family: 'alfarn';
         }
 
         .debt-section p {
@@ -267,7 +273,7 @@
 
         <div class="section">
             <img src="Imagem/planeje-financas.jpg" alt="Planejamento Financeiro">
-            <h3>Planejamento Financeiro</h3>
+            <h3><a href="planejamento.html">Planejamento Financeiro</a></h3>
             <p>Para manter suas finanças sob controle e evitar dívidas no futuro, comece avaliando sua situação
                 financeira e criando um orçamento mensal. Estabeleça metas financeiras claras e crie um fundo de
                 emergência para imprevistos. Invista em educação financeira e controle seus gastos anotando tudo. Use o
@@ -278,7 +284,7 @@
 
     <!-- Seção sobre como sair do endividamento -->
     <section class="debt-section">
-        <h2>Como Sair do Endividamento</h2>
+        <h2>Como Sair do Endividamento?</h2>
 
         <p>Sair do endividamento pode parecer uma tarefa difícil, mas com planejamento e disciplina, é totalmente
             possível. O primeiro passo é ter clareza da sua situação financeira. Faça uma lista de todas as suas
